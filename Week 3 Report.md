@@ -18,7 +18,7 @@ So far, nothing. I am confident that I will be able to complete this project. If
 
 ### What next?
 \- (Potentially) developing a simple GUI for the program  
-\- Optimising the code to improve pylint ratings
+\- Optimising the code to improve pylint ratings  
 \- Updating the [Specification.md](./Specification.md) document after everything has been completed  
 \- Responding to feedback and suggestions (if any)  
 \- Bug fixes (as necessary)  
