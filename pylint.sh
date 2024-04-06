@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if which pylint >/dev/null; then
-  pylint main.py
+  pylint functions
 else
   pip install pylint
-  pylint main.py
+  pylint functions
 fi

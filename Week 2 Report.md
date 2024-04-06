@@ -23,7 +23,7 @@ So far, nothing. I am confident that I will be able to complete this project. If
 
 ### What next?  
 
-\- The `encrypt(text: str, n: int, e: int) -> str` and `decrypt(text: str, d: int) -> str` funcions will be developed.  
+\- The `encrypt(text: str, n: int, e: int) -> str` and `decrypt(text: str, d: int, n: int) -> str` funcions will be developed.  
 \- The [Testing.md](./Testing.md) document will be updated.  
 \- If I receive any feedback or suggestion about a missing feature, I will consider implementing it.  
 \- Bug fixes (as necessary)  
