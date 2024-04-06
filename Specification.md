@@ -20,4 +20,4 @@ A basic implementation of RSA key generation has been developed so far, and this
 
 There are two additional functions:  
 \- `encrypt(text: str, n: int, e: int) -> str`: Encrypts a given string using the provided public key and returns the encrypted string.  
-\- `decrypt(text: str, d: int) -> str`: Decrypts a given string using the provided private key.  
+\- `decrypt(text: str, d: int, n: int) -> str`: Decrypts a given string using the provided private key.  
