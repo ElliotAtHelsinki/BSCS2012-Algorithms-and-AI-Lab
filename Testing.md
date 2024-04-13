@@ -19,7 +19,7 @@ TOTAL                            188      4    98%
 \+ Either `a` or `b` is negative, the other is positive.  
 \+ Both `a` and `b` are negative integers.  
 \- The implementation of the Miller-Rabin primality test has been tested. The implementation correctly works as the test theoretically envisioned. The test is only probabilistic, so it might occassionally mistake a composite number as a prime. However, for our purposes, it is good enough.  
-\- The key generator has been tested to make sure it correctly returns the public key components n and e as well as the private key d.  
+\- The key generator has been tested to make sure it correctly returns the public key components `n` and `e` as well as the private key `d`.  
 \- The encrypt and decrypt functions have been tested to make sure that:  
 \+ The encrypted string is not the same as the original string.  
 \+ The decrypted string is the same as the original string.  
