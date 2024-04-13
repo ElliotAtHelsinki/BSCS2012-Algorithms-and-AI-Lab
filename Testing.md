@@ -2,17 +2,13 @@
 ```
 Name                           Stmts   Miss  Cover
 --------------------------------------------------
-decrypt.py                        21     11    48%
-encrypt.py                        16      9    44%
-functions.py                      34      0   100%
-generate.py                       28      5    82%
 test/__init__.py                   0      0   100%
-test/test_eea.py                  29      1    97%
-test/test_encrypt_decrypt.py      17      1    94%
-test/test_generator.py            12      1    92%
-test/test_primality_test.py       23      1    96%
+test/test_eea.py                 105      1    99%
+test/test_encrypt_decrypt.py      18      1    94%
+test/test_generator.py            14      1    93%
+test/test_primality_test.py       51      1    98%
 --------------------------------------------------
-TOTAL                            180     29    84%
+TOTAL                            188      4    98%
 ```
 
 ### What has been tested and how?
@@ -31,7 +27,7 @@ TOTAL                            180     29    84%
 \- For the Extended Euclidean Algorithm, we inputted different values of a and b.
 \- For the Miller-Rabin test, we inputted some prime numbers, non-prime numbers, as well as edge cases.
 \- For the key generator, no input is required.
-\- For the encrypt and decrypt functions, we inputted a sample string: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+\- For the encrypt and decrypt functions, we inputted a few sample strings in several different languages.
 
 ### How can the tests be repeated?
 Running `./coverage.sh` on the terminal should execute all the written tests. New tests can also be written to the files inside the [test](./test) folder.

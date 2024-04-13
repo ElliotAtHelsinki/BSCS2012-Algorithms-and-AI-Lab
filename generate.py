@@ -5,6 +5,7 @@ import math
 from functions import primality_test
 from functions import extended_gcd
 
+
 def generate() -> tuple[int, int, int]:
   # Step 1: Find two large prime number p and q such that their produce has length of at least 1024 bits.
   p = None
@@ -22,7 +23,7 @@ def generate() -> tuple[int, int, int]:
     if primality_test(random_number) and p != random_number:
       q = random_number
 
-  # Step 2: Compute n = pq
+  # Step 2: Compute n = p * q
   n = p * q
 
   # Step 3: Compute λ(n)
@@ -37,11 +38,13 @@ def generate() -> tuple[int, int, int]:
 
   return (n, e, d)
 
+
 def main():
   (n, e, d) = generate()
   print(f'n: {n}')
   print(f'e: {e}')
   print(f'd: {d}')
+
 
 if __name__ == '__main__':
   main()

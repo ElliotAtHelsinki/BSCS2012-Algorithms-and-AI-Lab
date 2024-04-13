@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import sys
 
+
 def decrypt(text: str, d: int, n: int) -> str:
   try:
     # Convert the encrypted string into an integer
@@ -16,6 +17,7 @@ def decrypt(text: str, d: int, n: int) -> str:
   except:
     return 'Decryption Error!'
 
+
 def main():
   if len(sys.argv) != 4:
     print('Usage: ./decrypt.py text d n')
@@ -27,6 +29,7 @@ def main():
 
   decrypted_text = decrypt(cyphertext, d, n)
   print(f'Decrypted Text: {decrypted_text}')
+
 
 if __name__ == '__main__':
   main()
