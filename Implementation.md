@@ -5,7 +5,7 @@
 \- [functions.py](./functions.py) contains the implementations of the Miller-Rabin primality test (`primality_test(n: int, k: int = 100)`) and the Extended Euclidean Algorithm (`extended_gcd(a: int, b: int) -> tuple[int, int, int]`).
 
 ### The time and space complexities achieved (e.g., Big O analyses from pseudocode).
-\- `primality_test(n: int, k: int = 100)`, where $k$ is the number of testing rounds and n is the number to be tested:  
+\- `primality_test(n: int, k: int = 100)`, where $k$ is the number of testing rounds and $n$ is the number to be tested:  
 \+ Time complexity: $O(k \: log^3 n)$,  
 \+ Space complexity: $O(log \: n)$  
 \- `extended_gcd(a: int, b: int) -> tuple[int, int, int]`:  
