@@ -4,6 +4,7 @@
 \- Slightly modified [generate.py](./generate.py) to ensure that the generated keys are at least 1024 bits long  
 \- Added a CLI for the program: [main.py](./main.py)  
 \- Updated [Testing.md](./Testing.md) to actually detail the data used to test Miller-Rabin  
+\- Updated [Implementation.md](./Implementation.md) and [User Guide.md](./User%20Guide.md) to include information about [main.py](./main.py)  
 
 ### How has the project progressed?
 The project is mostly completed. There will be some final updates to the project.  
