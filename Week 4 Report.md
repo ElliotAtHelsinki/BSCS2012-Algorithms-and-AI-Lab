@@ -12,6 +12,6 @@ So far, nothing. I am confident that I will be able to complete this project. If
 
 ### What next?
 \- Updating the code to improve pylint ratings  
-\- Updating [Specification.md](./Specification.md) as the project becomes more refined  
+\- Updating [Implementation.md](./Implementation.md) as the project becomes more refined  
 \- Responding to feedback and suggestions (if any)  
 \- Bug fixes (as necessary)  

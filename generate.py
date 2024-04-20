@@ -1,9 +1,9 @@
 #!/usr/bin/python
-import secrets
 import math
 
 from functions import primality_test
 from functions import extended_gcd
+from Cryptodome.Random.random import getrandbits
 
 
 def generate() -> tuple[int, int, int]:
@@ -11,16 +11,17 @@ def generate() -> tuple[int, int, int]:
   p = None
   q = None
 
-  # p*q will certainly be at least 1024 bits long if p and q are 1024 bits long each.
-  # Therefore, we shall generate random 1024-bit integers and test them until we get two suitable prime numbers.
+  # p*q will certainly be at least 1024 bits long if p and q are at least 1024 bits long each.
   while p == None:
-    random_number = secrets.randbits(1024)
-    if primality_test(random_number):
+    num_bits = 2048
+    random_number = getrandbits(num_bits - 1) | (1 << (num_bits - 1))  # Generate 2047 random bits and add an additional 1-bit to the left to create a random 2048-bit integer
+    if random_number >= 2**1023 and primality_test(random_number):
       p = random_number
 
   while q == None:
-    random_number = secrets.randbits(1024)
-    if primality_test(random_number) and p != random_number:
+    num_bits = 2048
+    random_number = getrandbits(num_bits - 1) | (1 << (num_bits - 1))
+    if random_number >= 2**1023 and primality_test(random_number) and p != random_number:
       q = random_number
 
   # Step 2: Compute n = p * q

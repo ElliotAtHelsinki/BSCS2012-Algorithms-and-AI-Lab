@@ -11,6 +11,7 @@ class TestEncryptDecrypt(unittest.TestCase):
 
   def test_encrypt_decrypt(self):
     test_strings = [
+      "Manifesto of the Communist Party A spectre is haunting Europe — the spectre of communism. All the powers of old Europe have entered into a holy alliance to exorcise this spectre: Pope and Tsar, Metternich and Guizot, French Radicals and German police-spies.", # 257-character string
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       '没有共产党就没有新中国',
       'nolla yksi kaksi kolme neljä viisi kuusi seitsemän kahdeksan yhdeksän kymmenen',
