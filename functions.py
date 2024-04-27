@@ -1,3 +1,4 @@
+"""This module implements the Miller-Rabin primality test and the Extended Euclidean Algorithm."""
 import random
 
 
@@ -5,9 +6,10 @@ import random
 # https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test#Pseudocode:~:text=prime%E2%80%9D%20otherwise-,let%20s%20%3E%200%20and%20d%20odd%20%3E%200%20such%20that%20n%20%E2%88%92%201,1%20then%0A%20%20%20%20%20%20%20%20return%20%E2%80%9Ccomposite%E2%80%9D%0Areturn%20%E2%80%9Cprobably%20prime%E2%80%9D,-Complexity%5Bedit
 # n is the number to be tested; k is the number of testing rounds
 def primality_test(n: int, k: int = 100) -> bool:
+  """Miller-Rabin primality test"""
   if n <= 1:
     return False
-  if n == 2 or n == 3:
+  if n in (2, 3):
     return True
   if n % 2 == 0:
     return False
@@ -19,7 +21,7 @@ def primality_test(n: int, k: int = 100) -> bool:
   for _ in range(k):
     a = random.randint(2, n - 2)
     x = pow(a, d, n)
-    if x == 1 or x == n - 1:
+    if x in (1, n - 1):
       continue
     for _ in range(s - 1):
       x = pow(x, 2, n)
@@ -34,6 +36,7 @@ def primality_test(n: int, k: int = 100) -> bool:
 # https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm#Pseudocode:~:text=function%20extended_gcd(a,gcd%3A%22%2C%20(t%2C%20s)
 # Returns a tuple (gcd, x, y) such that a * x + b * y = gcd, with gcd being the greatest common divisor of a and b.
 def extended_gcd(a: int, b: int) -> tuple[int, int, int]:
+  """Extended Euclidean Algorithm"""
   old_r, r = a, b
   old_s, s = 1, 0
   old_t, t = 0, 1

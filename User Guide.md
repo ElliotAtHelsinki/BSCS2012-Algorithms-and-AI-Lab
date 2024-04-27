@@ -1,3 +1,6 @@
+### Installing the dependencies  
+Running `pip install -r requirements.txt` should install all the necessary packages for the project.  
+
 ### Generating a new key-pair  
 Running `./generate.py` should print out n, e, and d. n and e are components of the public key, while d is the private key.  
 
